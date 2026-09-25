@@ -1,0 +1,67 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Портфолио Гульчоро</h1>
+        <hr>
+        <a href="#about">ИНТЕРЕСНОЕ</a>
+        <a href="#That">НАВЫКИ</a>
+
+    </header>
+    <main>
+        <section id="about">
+            <hr>
+            <h2>Про меня</h2>
+            <hr>
+        <figure>
+    <img src="c:\Users\user\Downloads\photo_5310223601602599675_y.jpg"
+    alt="Мужчина"
+    width="360" height="300">
+   <figcaption></figcaption>
+    </figure>
+        <p>Меня зовут Темирбеков Гульчоро, мне 17.</p>
+        <p>Я студент колледжа Ала-Тоо 2 курса Компьютерных систем и комплексов.</p>
+        <p>Я активно занимаюсь спортом, есть навыки Дзюдо, Бокса.</p>
+
+        <p>У меня большие цели на будущее, которые я собираюсь воплотить в реальность.</p>
+        </section>
+        <hr>
+        <h2 id="That">НАВЫКИ</h2> 
+        <hr>
+    </main>
+    <footer>
+        <table>
+    <tr>
+       <table border="1">
+        <tr>
+            <td>Коммуникативность</td>
+            <td>Стратегичность</td>
+        </tr>
+        <tr>
+            <td>Турецкий</td>
+            <td>Английский</td>
+        </tr>
+        <tr>
+            <td>Анализ рынка</td>
+            <td>Внимательность</td>
+
+        </tr>
+    </table>
+    <tr>
+</table>
+    </footer>
+<footer class="mini-footer">
+    <div class="footer-content">
+        <!-- Левая сторона: Копирайт -->
+        <p class="copyright">&copy; 2026.09.25 сделано Гульчоро.</p>
+        <p class="footer-phone">Phone number: <a href="+996555999227">+996555999227</p>
+    </div>
+</footer>
+
+</body>
+</html>

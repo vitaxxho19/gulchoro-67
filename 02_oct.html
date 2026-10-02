@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trail Club</title>
+  <style>
+    body {
+      font-family: serif;
+      margin: 20px;
+      color: #000;
+      background-color: #fff;
+      line-height: 1.4;
+    }
+
+    /* Ссылки */
+    a {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #551a8b;
+    }
+
+    /* Заголовки */
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 2px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    /* Навигация */
+    nav {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      margin-right: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 15px 0;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* Иллюстрация горы (SVG) */
+    .banner-container {
+      margin-bottom: 10px;
+    }
+
+    .banner-svg {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    /* Информационный текст и списки */
+    .caption {
+      font-size: 0.9rem;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      margin-bottom: 15px;
+    }
+
+    .links-group {
+      margin-bottom: 25px;
+    }
+
+    .links-group a {
+      margin-right: 10px;
+    }
+
+    ol {
+      padding-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    ol li {
+      margin-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    details {
+      margin-top: 15px;
+      margin-bottom: 25px;
+      cursor: pointer;
+    }
+
+    /* Подвал / Заметки */
+    .notice-section {
+      margin-top: 20px;
+    }
+
+    .notice-text {
+      margin-bottom: 10px;
+    }
+
+    .footer-note {
+      font-size: 0.85rem;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    .back-to-top {
+      margin-top: 15px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Заголовок шапки -->
+  <h1>Trail Club</h1>
+  <div class="subtitle">Student hiking club - Classroom example</div>
+
+  <!-- Навигация -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#routes">Routes</a>
+    <a href="#apply">Apply for a trip</a>
+  </nav>
+
+  <hr>
+
+  <!-- Секция баннера -->
+  <h2>Your Next Adventure Starts Here</h2>
+
+  <div class="banner-container">
+    <svg class="banner-svg" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+      <!-- Фон -->
+      <rect width="600" height="200" fill="#e2ede3" rx="12" />
+      
+      <!-- Солнце -->
+      <circle cx="435" cy="42" r="18" fill="#e8a855" />
+      
+      <!-- Левая гора -->
+      <polygon points="40,200 150,115 260,200" fill="#3d7265" />
+      <polygon points="150,115 130,131 150,138 170,131" fill="#f4f5f0" />
+      
+      <!-- Средняя гора -->
+      <polygon points="220,200 315,125 410,200" fill="#4d7e73" />
+      <polygon points="315,125 298,138 315,145 332,138" fill="#f4f5f0" />
+      
+      <!-- Извилистая тропа -->
+      <path d="M 230 200 C 230 180, 310 180, 270 160 C 250 150, 310 145, 315 135" 
+            fill="none" stroke="#e8a855" stroke-width="7" stroke-linecap="round" />
+      
+      <!-- Правая гора (на переднем плане) -->
+      <polygon points="350,200 455,145 535,200" fill="#2d5850" />
+    </svg>
+  </div>
+
+  <div class="caption">Plan carefully. Travel together. Leave no trace.</div>
+
+  <div class="description">
+    We organize student walks and practice responsible trip planning.
+  </div>
+
+  <div class="links-group">
+    <a href="#compare">Compare routes</a>
+    <a href="#apply-place">Apply for a place</a>
+  </div>
+
+  <!-- Секция инструкции -->
+  <h2>Before You Go</h2>
+
+  <ol>
+    <li>Choose a route.
+      <ul>
+        <li>Check distance and duration.</li>
+        <li>Read the preparation checklist.</li>
+      </ul>
+    </li>
+    <li>Prepare your equipment.
+      <ul>
+        <li>Water and food</li>
+        <li>Comfortable shoes</li>
+        <li>Weather-appropriate clothing</li>
+      </ul>
+    </li>
+    <li>Complete the application form.</li>
+  </ol>
+
+  <!-- Выпадающая секция -->
+  <details>
+    <summary>What does "leave no trace" mean?</summary>
+    <p style="margin-top: 5px; font-size: 0.9rem;">
+      It means leaving nature as you found it: taking all trash with you, respecting wildlife, and staying on designated trails.
+    </p>
+  </details>
+
+  <!-- Секция объявлений -->
+  <h2>Club Notice</h2>
+
+  <div class="notice-section">
+    <p class="notice-text">Our next planning meeting is on 15 October at 15:30.</p>
+    <p class="notice-text">These trips are examples for this assignment, no real booking is available.</p>
+  </div>
+
+  <hr>
+
+  <!-- Подвал -->
+  <div class="footer-note">
+    Trail Club - Fictional trips and prices for HTML practice
+  </div>
+
+  <a href="#" class="back-to-top">Back to top !</a>
+
+</body>
+</html>

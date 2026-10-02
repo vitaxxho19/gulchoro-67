@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио Гульчоро</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Портфолио Гульчоро</h1>
+        <p>Студент веб-программирования · Колледж Ала-Тоо</p>
+
+        <hr>
+
+        <nav>
+            <a href="#about">Обо мне</a> |
+            <a href="#skills">Навыки</a> |
+            <a href="#work">Работа</a> |
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ОБО МНЕ -->
+        <section id="about">
+            <h2>Обо мне</h2>
+
+            <img src="гульчоро.jpg">
+
+            <p>
+                Меня зовут Темирбеков Гульчоро, мне 17.
+                Я студент колледжа Ала-Тоо 2 курса Компьютерных систем и комплексов.
+                Я активно занимаюсь спортом, есть навыки Дзюдо, Бокса.
+                У меня большие цели на будущее, которые я собираюсь воплотить в реальность.
+            </p>
+
+            <details>
+                <summary>Что я сейчас изучаю?</summary>
+                <p>
+                    Сейчас я изучаю HTML, изображения, ссылки,
+                    формы и мультимедиа.
+                </p>
+            </details>
+
+            <hr>
+        </section>
+
+
+        <!-- НАВЫКИ -->
+        <section id="skills">
+            <h2>Мои навыки</h2>
+
+            <ul>
+                <li>Структура HTML-страницы</li>
+                <li>Изображения и ссылки</li>
+                <li>Формы и мультимедиа</li>
+            </ul>
+
+            <p>
+                Выполнено разделов портфолио:
+                <progress value="3" max="5"></progress>
+                3 из 5
+            </p>
+
+            <p>
+                Самооценка HTML:
+                <meter value="70" min="0" max="100"></meter>
+                70 / 100
+            </p>
+
+            <p>
+                Результат сегодняшней работы:
+                3 завершённых раздела
+            </p>
+
+            <hr>
+        </section>
+
+
+        <!-- МОЯ РАБОТА -->
+        <section id="work">
+            <h2>Моя работа</h2>
+
+            <h3>Краткое представление</h3>
+
+            <p>Послушайте короткий аудиофайл.</p>
+
+            <audio controls>
+                <source src="Cristiano SIUUU Muchas - QuickSounds.com.mp3">
+                Ваш браузер не поддерживает аудио.
+            </audio>
+
+            <h3>Предпросмотр портфолио</h3>
+
+            <p>
+                Короткое примерное видео, сохранённое в той же папке
+                портфолио.
+            </p>
+
+            <video width="320" height="180" controls>
+                <source src="spongebob.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео.
+            </video>
+
+            <hr>
+        </section>
+
+
+        <!-- КОНТАКТЫ -->
+        <section id="contacts">
+            <h2>Связаться со мной</h2>
+
+            <p>
+                Это учебная форма. Она пока не отправляет сообщения.
+            </p>
+
+            <form>
+
+                <fieldset>
+                    <legend>Ваше сообщение</legend>
+
+                    <label for="name">Имя</label><br>
+                    <input type="text" id="name" name="name">
+
+                    <br><br>
+
+                    <label for="email">Электронная почта</label><br>
+                    <input type="email" id="email" name="email">
+
+                    <br><br>
+
+                    <label for="message">Сообщение</label><br>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        cols="30"></textarea>
+
+                    <br><br>
+
+                    <button type="submit">Отправить</button>
+                    <button type="reset">Очистить</button>
+
+                </fieldset>
+
+            </form>
+        </section>
+
+    </main>
+
+</body>
+</html>

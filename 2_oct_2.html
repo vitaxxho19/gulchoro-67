@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trail Club - Routes</title>
+  <style>
+    body {
+      font-family: serif;
+      margin: 20px;
+      color: #000;
+      background-color: #fff;
+      line-height: 1.4;
+    }
+
+    /* Ссылки */
+    a {
+      color: #0000ee;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #551a8b;
+    }
+
+    /* Заголовки */
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 2px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      margin-top: 0;
+      margin-bottom: 12px;
+    }
+
+    /* Навигация */
+    nav {
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      margin-right: 10px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ccc;
+      margin: 15px 0;
+    }
+
+    /* Хлебные крошки */
+    .breadcrumbs {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    /* Быстрые ссылки по маршрутам */
+    .quick-links {
+      margin-bottom: 20px;
+    }
+
+    .quick-links a {
+      margin-right: 8px;
+    }
+
+    /* Таблица */
+    .table-container {
+      margin-bottom: 5px;
+    }
+
+    .table-caption {
+      font-size: 0.9rem;
+      margin-bottom: 8px;
+    }
+
+    table {
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 3px 15px 3px 0;
+      vertical-align: bottom;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .price-note {
+      font-size: 0.85rem;
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
+
+    /* Карточки/Секции маршрутов */
+    .route-section {
+      margin-bottom: 25px;
+    }
+
+    .route-section p {
+      margin: 6px 0;
+    }
+
+    .info-group {
+      margin: 8px 0;
+      padding-left: 10px;
+    }
+
+    .info-label {
+      font-size: 0.9rem;
+    }
+
+    .info-value {
+      padding-left: 15px;
+      font-size: 0.9rem;
+    }
+
+    /* Шкала прогресса (progress bar) */
+    .progress-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+    }
+
+    progress {
+      width: 120px;
+      height: 12px;
+      accent-color: #2e7d32;
+    }
+
+    details {
+      margin: 10px 0;
+      cursor: pointer;
+    }
+
+    .apply-link {
+      display: inline-block;
+      margin-top: 5px;
+    }
+
+    /* Подвал */
+    .footer-note {
+      font-size: 0.85rem;
+      color: #333;
+      margin-top: 15px;
+    }
+
+    .back-to-top {
+      margin-top: 15px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Заголовок -->
+  <h1>Trail Club</h1>
+  <div class="subtitle">Student hiking club · Classroom example</div>
+
+  <!-- Главная навигация -->
+  <nav>
+    <a href="#home">Home</a> · 
+    <a href="#routes">Routes</a> · 
+    <a href="#apply">Apply for a trip</a>
+  </nav>
+
+  <hr>
+
+  <!-- Хлебные крошки -->
+  <div class="breadcrumbs">
+    <a href="#home">Home</a> &rarr; Routes
+  </div>
+
+  <h2>Choose Your Route</h2>
+
+  <!-- Ссылки для быстрого перехода -->
+  <div class="quick-links">
+    <a href="#comparison">Comparison</a> · 
+    <a href="#river-walk">River Walk</a> · 
+    <a href="#forest-trail">Forest Trail</a> · 
+    <a href="#ridge-view">Ridge View</a>
+  </div>
+
+  <!-- Секция сравнения -->
+  <h3 id="comparison">Route Comparison</h3>
+
+  <div class="table-caption">Sample routes &mdash; estimated classroom data</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Route</th>
+        <th colspan="2" style="text-align: center;">Trip details</th>
+        <th rowspan="2">Sample price</th>
+      </tr>
+      <tr>
+        <th>Distance</th>
+        <th>Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="#river-walk">River Walk</a></td>
+        <td>4 km</td>
+        <td>2 hours</td>
+        <td>300 KGS</td>
+      </tr>
+      <tr>
+        <td><a href="#forest-trail">Forest Trail</a></td>
+        <td>7 km</td>
+        <td>4 hours</td>
+        <td>500 KGS</td>
+      </tr>
+      <tr>
+        <td><a href="#ridge-view">Ridge View</a></td>
+        <td>10 km</td>
+        <td>6 hours</td>
+        <td>700 KGS</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="price-note">Prices are fictional and used only for HTML practice.</div>
+
+  <!-- Маршрут 1: River Walk -->
+  <div class="route-section" id="river-walk">
+    <h3>River Walk</h3>
+    <p>A short route beside the river.</p>
+
+    <div class="info-group">
+      <div class="info-label">Meeting point</div>
+      <div class="info-value">Student entrance</div>
+      <div class="info-label">Group size</div>
+      <div class="info-value">20 people</div>
+    </div>
+
+    <div class="progress-container">
+      <span>Reserved places:</span>
+      <progress value="8" max="20"></progress>
+      <span>8 / 20</span>
+    </div>
+
+    <details>
+      <summary>What should I bring?</summary>
+      <p style="padding-left: 15px; font-size: 0.9rem;">
+        Water bottle, comfortable shoes, and light snacks.
+      </p>
+    </details>
+
+    <a href="#apply" class="apply-link">Apply for this trip</a>
+  </div>
+
+  <!-- Маршрут 2: Forest Trail -->
+  <div class="route-section" id="forest-trail">
+    <h3>Forest Trail</h3>
+    <p>A longer walk with shaded sections.</p>
+
+    <div class="progress-container">
+      <span>Reserved places:</span>
+      <progress value="12" max="16"></progress>
+      <span>12 / 16</span>
+    </div>
+
+    <details>
+      <summary>Preparation checklist</summary>
+      <p style="padding-left: 15px; font-size: 0.9rem;">
+        Sturdy hiking boots, at least 1.5L of water, rain jacket.
+      </p>
+    </details>
+
+    <a href="#apply" class="apply-link">Apply for this trip</a>
+  </div>
+
+  <!-- Маршрут 3: Ridge View -->
+  <div class="route-section" id="ridge-view">
+    <h3>Ridge View</h3>
+    <p>The longest route in this fictional club catalog.</p>
+
+    <div class="progress-container">
+      <span>Reserved places:</span>
+      <progress value="6" max="12"></progress>
+      <span>6 / 12</span>
+    </div>
+
+    <details>
+      <summary>How is this route different?</summary>
+      <p style="padding-left: 15px; font-size: 0.9rem;">
+        Higher elevation, steep inclines, and panoramic mountain views.
+      </p>
+    </details>
+
+    <a href="#apply" class="apply-link">Apply for this trip</a>
+  </div>
+
+  <hr>
+
+  <!-- Подвал -->
+  <div class="footer-note">
+    Trail Club · Fictional trips and prices for HTML practice
+  </div>
+
+  <a href="#" class="back-to-top">Back to top &uarr;</a>
+
+</body>
+</html>  
